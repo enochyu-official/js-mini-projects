@@ -1,0 +1,17 @@
+<footer>
+  <p>&copy; <span id="year"></span> Enoch Yu. All Rights Reserved.</p>
+  <a href="https://github.com/enochyu-official/js-mini-projects" target="_blank" rel="noopener noreferrer">Source Code</a>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  var t = setInterval(function() {
+    if (window.goatcounter && window.goatcounter.visit_count) {
+      clearInterval(t);
+      window.goatcounter.visit_count({append: '#stats'});
+    }
+  }, 100);
+</script>
+<script data-goatcounter="https://enochyu-js.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
