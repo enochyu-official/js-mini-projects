@@ -10,7 +10,7 @@
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Enoch Yu's JavaScript Mini-Projects" />
   <title>Enoch Yu's JavaScript Mini-Projects</title>
-  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/style.css">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link rel="canonical" href="https://enochyu-js.pages.dev/" />
@@ -34,7 +34,24 @@
 
   <a href="https://github.com/enochyu-official/js-mini-projects" target="_blank" rel="noopener noreferrer" id="source">Source Code of the Project</a>
 
-  <div id="text">
+  <aside id="toc-container">
+    <div class="toc-sidebar">
+      <nav class="toc">
+        <h4>Table of Contents</h4>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#projectList">List of Projects</a></li>
+          <li><a href="#previewIntro">Preview of Each Project</a></li>
+          <ol>
+            <li><a href="#coffee-shop">Coffee Shop</a></li>
+            <li><a href="#stopwatch">Stopwatch</a></li>
+          </ol>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="text" id="introduction">
     <p>
     Welcome to my JavaScript mini-projects!! As an ardent high school sophomore who loves math and programming, I decided to create mini-projects with JavaScript. The purpose of this project is to document my learning journey and to actively engage in learning different programming languages on my own.
 
@@ -89,14 +106,14 @@
     </table>
   </div>
 
-  <div id="text">
+  <div class="text" id="previewIntro">
     <h2>
     Below are the interactive preview of each project. Although responsive components were used to create each project, it may not look pretty in the preview below. Thus, please access each project with the links above!!
     </h2>
   </div>
 
   <div id="previewList">
-    <div class="previewBox">
+    <div class="previewBox" id="coffee-shop">
       <div class="previewLink">
         <a href="/projects/project1_CoffeeShop/index.html">Project 1: Coffee Shop</a>
       </div>
@@ -105,7 +122,7 @@
       </div>
     </div>
 
-    <div class="previewBox">
+    <div class="previewBox" id="stopwatch">
       <div class="previewLink">
         <a href="/projects/project2_TimerStopwatch/index.html">Project 2: Stopwatch</a>
       </div>
@@ -115,6 +132,7 @@
     </div>
   </div>
   <div id="stats"></div>
+  <script src="/assets/script.js"></script>
 </body>
 <footer> 
   <p>
