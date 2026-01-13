@@ -10,8 +10,12 @@ body, html {
 }
 
 #calculator {
-  max-width: 60vw;
+  max-width: 70vw;
   max-height: 80vw; 
+}
+
+@media (min-width: 768px) {
+  #calculator { transform: scale(1.5); }
 }
 
 #calculator-output {
@@ -36,6 +40,8 @@ body, html {
   padding: 2px;
 }
 
+
+/* Buttons */
 .btn {
   height: 30px;
   padding: 5px 7px;
@@ -47,5 +53,30 @@ body, html {
 .btn:hover {
   border: 1px solid whitesmoke;
   color: #1B1B1B;
+  background-color: whitesmoke;
+}
+
+.btn1 {
+  height: 30px;
+  padding: 5px 7px;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  background-color: #26282A;
+}
+
+.btn1:hover {
+  border: 1px solid whitesmoke;
+  color: #26282A;
+  background-color: whitesmoke;
+}
+
+#clear, #equal {
+  height: 65px;
+  background-color: #0B0705;
+}
+
+#clear:hover, #equal:hover {
+  border: 1px solid whitesmoke;
+  color: #0B0705;
   background-color: whitesmoke;
 }
