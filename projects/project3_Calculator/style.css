@@ -20,6 +20,11 @@ body, html {
   text-align: right;
 }
 
+#output:empty::before {
+  content: "0";
+  color: #C0C0C0;
+}
+
 #calculator-input {
   border: 1.5px solid whitesmoke;
   padding: 5px;

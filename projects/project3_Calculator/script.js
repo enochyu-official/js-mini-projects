@@ -1,36 +1,26 @@
 // Declaring Variables
-let buttonId = document.querySelectorAll("#calculator-input");
+let selectId;
+let selectContent;
+let buttonId = document.getElementById("calculator-input");
+const outputContent = document.getElementById("output");
 
 // Function
 function select(event) {
-  let selectId = event.target.id;
-  console.log(selectId);
+  selectId = event.target.closest("button").id;
+  selectContent = event.target.closest("button").value;
+
+  display();
+}
+
+function display() {
+  outputContent.textContent += selectContent;
+}
+
+function clear() {
+  outputContent.textContent = "";
 }
 
 buttonId.addEventListener("click", select);
+document.getElementById("clear").addEventListener("click", clear); 
 
-/*
-MY THOUGHT PROCESS
 
-1. CASE BY CASE
-let select1 = document.getElementById('1');
-let content1 = select1.textContent;
-function display1() {
-  document.getElementById("output").textContent = content1;
-}
-select1.addEventLIstener("click", display1);
-
-2. ACCUMULATION
-select.addEventListener("click", select(event) {
-    let selectId = event.target.id;
-    console.log(selectId);
-  }
-);
-
-function displayHSTR {
-  
-}
-function displayTotal() {
-
-}
-*/
